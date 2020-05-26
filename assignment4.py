@@ -5,9 +5,8 @@ import numpy as np
 from nltk.util import ngrams
 
 ##get files from command line
-commands = str(sys.argv)
-print(commands[2])
-print(commands[1])
+print(sys.argv[2])
+print(sys.argv[1])
 ##getting transition and emission states
 traindata = open(trainfile, "r")
 transitions= []
